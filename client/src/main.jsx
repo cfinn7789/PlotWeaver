@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import 'bulma/css/bulma.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import App from './App.jsx'
-import Home from './pages/Home'
-import Profile from './pages/Profile'
-import Error from './pages/Error'
+import './App.css';
+
+import App from './App';
+import Home from './pages/Home';
+// import Portfolio from './pages/Portfolio';
 
 const router = createBrowserRouter([
   {
@@ -18,20 +18,13 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       // {
-      //   path: '/profile/:profileId',
-      //   element: <Profile />,
+      //   path: '/Portfolio',
+      //   element: <Portfolio />,
       // },
-      {
-        path: '/me',
-        element: <Profile />
-      },
-      { index: true, element: <Home /> },
-      { path: '/me', element: <Profile /> },
-      { path: '/game/:gameId', element: <SingleGame /> }, // Add this route
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
-)
+);

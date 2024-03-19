@@ -1,20 +1,14 @@
 // import { gql } from '@apollo/client';
 
-// export const ADD_REVIEW = gql`
-//   mutation addReview($reviewText: String!, $reviewAuthor: String!) {
-//     addReview(reviewText: $reviewText, reviewAuthor: $reviewAuthor) {
-//       _id
-//       reviewText
-//       reviewAuthor
-//       createdAt
-//       comments {
-//         _id
-//         commentText
-//         commentAuthor
-//       }
-//     }
-//   }
-// `;
+//  export const ADD_IDEA = gql`
+//    mutation addIdea($ideaTitle: String!, $ideaText: String!) {
+//      addIdea(ideaText: $ideaText, ideaTitle: $ideaTitle) {
+//        _id
+//        ideaText
+//        ideaTitle
+//      }
+//    }
+//  `;
 
 // export const ADD_COMMENT = gql`
 //   mutation addComment($reviewId: ID!, $commentText: String!) {
@@ -58,12 +52,12 @@
 // `;
 
 // export const ADD_USER = gql`
-//   mutation addUser($username: String!, $email: String!, $password: String!) {
-//     addUser(username: $username, email: $email, password: $password) {
+//   mutation addUser($email: String!, $password: String!) {
+//     addUser(email: $email, password: $password) {
 //       token
 //       user {
 //         _id
-//         username
+//         email
 //       }
 //     }
 //   }
